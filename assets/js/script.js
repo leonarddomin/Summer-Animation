@@ -311,4 +311,4 @@ let audio = new Audio('./assets/music/ID_summer_43s_ff_fo.mp3');
 
 document.addEventListener("dblclick", function (){
     window.location.reload();
-};
+});
