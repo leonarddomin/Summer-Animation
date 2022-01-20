@@ -1,0 +1,12 @@
+body {
+  background: rgb(85, 85, 85);
+  }
+  .screen {
+  width: 90vw;
+  height: 90vh;
+  background: black;
+  margin: auto;
+  margin-top: 20px;
+  overflow: hidden;
+  position: relative;
+  }
