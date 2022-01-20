@@ -298,4 +298,7 @@ document.addEventListener("click", function () {
   audio.play();
   mainTimeline.play();
   console.log("L'animation et la musique sont lancée !");
-});
+}); 
+document.addEventListener("dblclick", function (){
+    window.location.reload()
+})
