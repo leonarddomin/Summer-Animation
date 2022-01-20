@@ -292,13 +292,23 @@ const mainTimeline = new mojs.Timeline({})
   .add(circleTimeline)
   .add(finalTimeline);
 
-let audio = new Audio("./assets/music/ID_summer_43s_ff_fo.mp3");
+let audio = new Audio('./assets/music/ID_summer_43s_ff_fo.mp3');
+ let counter = 0;
+ document.addEventListener("click", function () {
+   counter ++;
+   if (counter > 1) {
+     audio.pause();
+     mainTimeline.pause()
+     console.log('pause');
+     counter = 0
+   } else {
+     audio.play(); 
+    mainTimeline.play(); 
+    console.log("play") 
+   }
+    
+  });
 
-document.addEventListener("click", function () {
-  audio.play();
-  mainTimeline.play();
-  console.log("L'animation et la musique sont lancée !");
-}); 
 document.addEventListener("dblclick", function (){
-    window.location.reload()
-})
+    window.location.reload();
+};
